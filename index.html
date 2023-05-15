@@ -1,0 +1,175 @@
+<html>
+<head>
+	<title>Susamogus+</title>
+	
+	<!-- Include CSS for tabs -->
+	<style>
+		body {
+			background-color: #ADD8E6;
+			font-family: 
+sans-serif;
+            font-weight: bold;
+
+			margin: 0;
+			padding: 0;
+		}
+		
+		#logo {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			height: 80px;
+			width: 80%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 24px;
+			color: #2196f3;
+		}
+		
+		.tab {
+			overflow: hidden;
+			background-color: white;
+			margin-top: 120px;
+		}
+		
+		.tab button {
+			background-color: inherit;
+			float: left;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			padding: 14px 16px;
+			transition: 0.3s;
+			font-size: 18px;
+			color: black;
+		}
+		
+		.tab button:hover {
+			background-color: #ccc;
+		}
+		
+		.tab button.active {
+			background-color: #2196f3;
+			color: white;
+		}
+		
+		.tabcontent {
+			display: none;
+			padding: 6px 12px;
+			border-top: none;
+			background-color: white;
+			color: black;
+			font-size: 16px;
+		}
+	</style>
+	
+</head>
+<body>
+
+	<div id="logo">Welcome to my poorly built website</div>
+
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event, 'Page1')">Interstellar 1</button>
+		<button class="tablinks" onclick="openTab(event, 'Page2')">Interstellar 2</button>
+		<button class="tablinks" onclick="openTab(event, 'Page3')">Interstellar 3</button>
+        <button class="tablinks" onclick="openTab(event, 'Page4')">GBA Emulator</button>
+		<button class="tablinks" onclick="openTab(event, 'Page5')">Github</button>
+		<button class="tablinks" onclick="openTab(event, 'Page6')">Geo</button>
+	</div>
+	 <button style="height:330px;width:330px" onclick="cloud()"><iframe src="https://tube.cadence.moe/" title="miki" style="height:295px;width:295px"></iframe></button>
+    <script>
+function cloud() {
+var win = window.open()
+var url = "https://tube.cadence.moe/"
+var iframe = win.document.createElement('iframe')
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = "none";
+iframe.src = url
+win.document.body.appendChild(iframe)
+}
+</script>
+        <button style="height:330px;width:330px" onclick="wat()"><iframe src="https://iridium-main-4.notquitezook.repl.co/" title="miki" style="height:290px;width:290px"></iframe></button>
+    <script>
+function wat() {
+var win = window.open()
+var url = "https://iridium-main-4.notquitezook.repl.co/"
+var iframe = win.document.createElement('iframe')
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = "none";
+iframe.src = url
+win.document.body.appendChild(iframe)
+}
+</script>
+     <button class="button miki" Blue style="height:330px;width:330px" onclick="miki()"><iframe src="https://antsbackups.github.io/more" title="miki" style="height:290px;width:290px"></iframe></button>
+    <script>
+function miki() {
+var win = window.open()
+var url = "https://antsbackups.github.io/more"
+var iframe = win.document.createElement('iframe')
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = "none";
+iframe.src = url
+win.document.body.appendChild(iframe)
+}
+</script>
+        <button style="height:330px;width:330px" onclick="gba()"><iframe src="https://chatgpteasy.info/#/" title="miki" style="height:290px;width:295px"></iframe></button>
+    <script>
+function gba() {
+var win = window.open()
+var url = "https://chatgpteasy.info/#/"
+var iframe = win.document.createElement('iframe')
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = "none";
+iframe.src = url
+win.document.body.appendChild(iframe)
+}
+</script>
+	<div id="Page1" class="tabcontent">
+		<iframe src="https://axmz.shekinahphotography.com/" style="height:600px;width:100%;border:none;"></iframe>
+	</div>
+	
+	<div id="Page2" class="tabcontent">
+		<iframe src="https://axzy.avaphotodesign.com/" style="height:600px;width:100%;border:none;"></iframe>
+	</div>
+	
+	<div id="Page3" class="tabcontent">
+		<iframe src="https://learn.richsfamilyonline.net/" style="height:600px;width:100%;border:none;"></iframe>
+	</div>
+    
+    <div id="Page4" class="tabcontent">
+		<iframe src="https://matthewbauer.us/gametime-player/" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+	</div>	
+    
+    <div id="Page5" class="tabcontent">
+		<iframe src="https://axmz.shekinahphotography.com/service/hvtrs8%2F-gktju%60.aoo%2F" style="height:600px;width:100%;border:none;"></iframe>
+	</div>
+    
+	<div id="Page6" class="tabcontent">
+		<iframe src="https://antsbackups.github.io/math/geo/" style="height:600px;width:100%;border:none;"></iframe>
+	</div>
+	
+	<script>
+		function openTab(evt, tabName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+	</script>
+
+</body>
+</html>
+
+
